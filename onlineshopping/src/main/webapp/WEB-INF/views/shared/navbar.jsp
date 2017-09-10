@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li id="home">
-              <a class="nav-link" href="${contextRoot}/">Home
+              <a class="nav-link" href="${contextRoot}/home">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
