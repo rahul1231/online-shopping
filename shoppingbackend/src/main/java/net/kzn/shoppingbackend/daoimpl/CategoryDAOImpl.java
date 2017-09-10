@@ -74,7 +74,6 @@ public class CategoryDAOImpl implements CategoryDAO {
 		try {
 			//add the category to the database table
 			sessionFactory.getCurrentSession().persist(category);
-			sessionFactory.openSession().persist(category);
 			return true;
 		}
 		catch(Exception ex) {
