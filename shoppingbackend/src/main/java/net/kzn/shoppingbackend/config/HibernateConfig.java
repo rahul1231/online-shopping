@@ -1,5 +1,7 @@
 package net.kzn.shoppingbackend.config;
 
+
+
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -14,7 +16,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan(basePackages={"net.kzn.shoppingbackend.dto"})
+@ComponentScan(basePackages={"net.kzn.shoppingbackend.*"})
 @EnableTransactionManagement
 public class HibernateConfig {
 
@@ -46,7 +48,7 @@ public class HibernateConfig {
 		LocalSessionFactoryBuilder builder=new LocalSessionFactoryBuilder(dataSource);
 		
 		builder.addProperties(getHibernateProperties());
-		builder.scanPackages("net.kzn.shoppingbackend.dto");
+		builder.scanPackages("net.kzn.shoppingbackend.*");
 		
 		return builder.buildSessionFactory();
 	}

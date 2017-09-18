@@ -1,6 +1,8 @@
 package net.kzn.shoppingbackend.test;
 
-import static org.junit.Assert.assertEquals;
+
+
+import static org.junit.Assert.*;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -48,7 +50,7 @@ public class CategoryTestCase {
 	@Test
 	public void testGetCategory() {
 		
-		category=categoryDAO.get(5);
+		category=categoryDAO.get(1);
 		
 		assertEquals("Successfully fetched a single category from the table!","Television",category.getName());
 
@@ -59,7 +61,7 @@ public class CategoryTestCase {
 	@Test
 	public void testUpdateCategory() {
 		
-		category=categoryDAO.get(5);
+		category=categoryDAO.get(1);
 		
 		category.setName("TV");
 		
@@ -72,7 +74,7 @@ public class CategoryTestCase {
 	@Test
 	public void testDeleteCategory() {
 		
-		category=categoryDAO.get(5);
+		category=categoryDAO.get(1);
 		
 
 		
@@ -85,7 +87,7 @@ public class CategoryTestCase {
 	@Test
 	public void testListCategory() {
 		
-		category=categoryDAO.get(5);
+		category=categoryDAO.get(1);
 		
 
 		
@@ -93,6 +95,7 @@ public class CategoryTestCase {
 
 	}
 	*/
+	
 	
 	@Test
 	public void testCRUDCategory() {
