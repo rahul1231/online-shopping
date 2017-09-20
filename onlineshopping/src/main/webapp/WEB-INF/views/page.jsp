@@ -23,24 +23,36 @@
     
     <script>
     	window.menu='${title}';
+    	
+    	window.contextRoot='${contextRoot}';
+    	
     </script>
-    
-    <!-- Self Coded js -->
-    <script src="${js}/myapp.js"></script>
-
+	
 	<!-- Bootstrap core JavaScript -->
     <script src="${js}/jquery.js"></script>
     <script src="${js}/vendor.min.js"></script>
     <script src="${js}/bootstrap.min.js"></script>
 	
-    <!-- Bootstrap core CSS -->
+	 <!-- Bootstrap core CSS -->
     <link href="${css}/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap Readable Theme CSS -->
     <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
+	<!-- Bootstrap DataTables -->
+    <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="${css}/myapp.css" rel="stylesheet">
+	
+	 <!-- DataTable Plugin -->
+	<script src="${js}/jquery.dataTables.js"></script>
+	
+	<!-- DataTable Bootstrap Script -->
+	<script src="${js}/dataTables.bootstrap.js"></script>
+	
+	 <!-- Self Coded js -->
+    <script src="${js}/myapp.js"></script>
 
   </head>
 

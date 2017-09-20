@@ -57,6 +57,7 @@ html {
 	font-family: sans-serif;
 	line-height: 1.15;
 	height:100%;
+	width:100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
@@ -91,6 +92,7 @@ body {
 	color: #212529;
 	background-color: #fff;
 	height:100%;
+	width:100%;
 }
 
 [tabindex="-1"]:focus {
@@ -8141,4 +8143,10 @@ a.text-dark:focus, a.text-dark:hover {
 	position:absolute;
 	bottom:0;
 	height:60px;
+}
+
+.dataTableImg {
+	
+	width:100px;
+	height:100px;
 }
