@@ -8148,3 +8148,7 @@ a.text-dark:focus, a.text-dark:hover {
 	width:100px;
 	height:100px;
 }
+
+.help-block {
+	color:#ff0000;
+}
