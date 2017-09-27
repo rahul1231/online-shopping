@@ -127,12 +127,12 @@
 	
 	<div class="row">
 	
-		<div class="col-lg-offset-3 col-lg-9">
+		<div class="col-lg-offset-3 col-lg-9 col-xs-12">
 			<h3>Available Products</h3>
-			<hr/>
+			<hr style="width:600px" align="left"/>
 		</div>
 	
-		<div class="col-lg-offset-3 col-lg-9">
+		<div class="col-lg-offset-3 col-lg-9 col-xs-12">
 			
 			<div style="overflow:auto">
 				

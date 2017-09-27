@@ -15,7 +15,7 @@
 			<!-- Added breadcrumb component -->
 			<div class="row">
 
-				<div class="col-lg-12">
+				<div class="col-lg-12 col-xs-12">
 
 					<c:if test="${userClickAllProducts==true}">
 					
@@ -50,7 +50,7 @@
 			
 			<div class="row">
 			
-				<div class="col-lg-9">
+				<div class="col-lg-9 col-xs-12">
 				
 				
 					<table id="productListTable" class="table table-striped table-bordered">
