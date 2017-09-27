@@ -50,7 +50,7 @@
 			
 			<div class="row">
 			
-				<div class="col-xs-12">
+				<div class="col-lg-9">
 				
 				
 					<table id="productListTable" class="table table-striped table-bordered">

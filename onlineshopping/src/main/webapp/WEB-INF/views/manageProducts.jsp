@@ -124,14 +124,15 @@
 		</div>
 	</div>
 
+	
 	<div class="row">
 	
-		<div class="col-xs-12">
+		<div class="col-lg-offset-3 col-lg-9">
 			<h3>Available Products</h3>
 			<hr/>
 		</div>
 	
-		<div class="col-xs-12">
+		<div class="col-lg-offset-3 col-lg-9">
 			
 			<div style="overflow:auto">
 				
@@ -170,7 +171,7 @@
 		</div>
 		
 	</div>
-	
+
 	<div class="modal fade" id="myCategoryModal" role="dialog" tabindex="-1">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
