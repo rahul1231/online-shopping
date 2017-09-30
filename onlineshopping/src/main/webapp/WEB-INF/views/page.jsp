@@ -28,9 +28,11 @@
     	
     </script>
 	
-	<!-- Bootstrap core JavaScript -->
+	<!-- jQuery -->
     <script src="${js}/jquery.js"></script>
-    <script src="${js}/vendor.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+	<script src="${js}/vendor.min.js"></script>
     <script src="${js}/bootstrap.min.js"></script>
 	
 	 <!-- Bootstrap core CSS -->
@@ -44,6 +46,9 @@
 
     <!-- Custom styles for this template -->
     <link href="${css}/myapp.css" rel="stylesheet">
+    
+     <!-- jQuery validator -->
+	<script src="${js}/jquery.validate.js"></script>
 	
 	 <!-- DataTable Plugin -->
 	<script src="${js}/jquery.dataTables.js"></script>
