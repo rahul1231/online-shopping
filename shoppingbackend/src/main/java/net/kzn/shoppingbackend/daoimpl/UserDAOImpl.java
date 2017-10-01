@@ -66,15 +66,14 @@ public class UserDAOImpl implements UserDAO {
 			
 			return sessionFactory.getCurrentSession()
 					.createQuery(selectQuery,User.class)
-						.setParameter("email",email)
+						.setParameter("email", email)
 							.getSingleResult();
+			
 		}
 		catch(Exception ex) {
 			ex.printStackTrace();
 			return null;
 		}
-		
-		
 	}
 
 	@Override
@@ -85,8 +84,8 @@ public class UserDAOImpl implements UserDAO {
 			
 			return sessionFactory.getCurrentSession()
 					.createQuery(selectQuery,Address.class)
-						.setParameter("user",user)
-						.setParameter("billing",true)
+						.setParameter("user", user)
+						.setParameter("billing", true)
 						.getSingleResult();
 		}
 		catch(Exception ex) {
@@ -98,15 +97,14 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public List<Address> listShippingAddresses(User user) {
-		
 		String selectQuery="FROM Address WHERE user=:user AND shipping=:shipping";
 		
 		try {
-					
+			
 			return sessionFactory.getCurrentSession()
 					.createQuery(selectQuery,Address.class)
-						.setParameter("user",user)
-						.setParameter("shipping",true)
+						.setParameter("user", user)
+						.setParameter("shipping", true)
 						.getResultList();
 		}
 		catch(Exception ex) {

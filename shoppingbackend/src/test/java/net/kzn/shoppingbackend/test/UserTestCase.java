@@ -142,7 +142,7 @@ public class UserTestCase {
 		
 	}
 	*/
-	
+
 	/*
 	@Test
 	public void testAddAddress() {
@@ -216,6 +216,7 @@ public class UserTestCase {
 		assertEquals("Failed to add shipping address!",true,userDAO.addAddress(address));
 	}
 	*/
+	
 	
 	@Test
 	public void testGetAddresses() {

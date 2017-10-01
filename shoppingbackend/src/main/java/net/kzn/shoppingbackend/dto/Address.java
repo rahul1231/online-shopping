@@ -1,5 +1,7 @@
 package net.kzn.shoppingbackend.dto;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,16 +19,19 @@ public class Address {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	
-	/*----------*/
+	/*---------*/
 	@ManyToOne
 	private User user;
+	
+	/*---------*/
+	
 	public User getUser() {
 		return user;
 	}
 	public void setUser(User user) {
 		this.user = user;
 	}
+
 
 	@Column(name="address_line_one")
 	private String addressLineOne;
@@ -40,10 +45,10 @@ public class Address {
 	private boolean shipping;
 	private boolean billing;
 	
+	
 	/*
 	 * setters and getters for the fields
 	 */
-	
 	public int getId() {
 		return id;
 	}
@@ -99,14 +104,14 @@ public class Address {
 		this.billing = billing;
 	}
 	
-	/*
-	 * toString for logging and debugging activity
-	 */
+	// toString for looging and debugging activity
 	@Override
 	public String toString() {
 		return "Address [id=" + id + ", user=" + user + ", addressLineOne=" + addressLineOne + ", addressLineTwo="
 				+ addressLineTwo + ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode="
 				+ postalCode + ", shipping=" + shipping + ", billing=" + billing + "]";
 	}
-
+	
+	
+	
 }

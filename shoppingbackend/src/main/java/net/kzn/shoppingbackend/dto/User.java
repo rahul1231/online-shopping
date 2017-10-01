@@ -1,5 +1,7 @@
 package net.kzn.shoppingbackend.dto;
 
+import java.io.Serializable;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -39,9 +41,7 @@ public class User {
 	public void setCart(Cart cart) {
 		this.cart = cart;
 	}
-	/*
-	 * setters and getters for the fields
-	 */
+	// getters and setters for the fields
 	public int getId() {
 		return id;
 	}
@@ -91,16 +91,15 @@ public class User {
 		this.enabled = enabled;
 	}
 	
-	
-	/*
-	 * toString for logging and debugging activity
-	 */
+	// toString for looging and debugging activity
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", contactNumber=" + contactNumber + ", role=" + role + ", password=" + password + ", enabled="
 				+ enabled + "]";
 	}
+	
+	
 	
 	
 	
