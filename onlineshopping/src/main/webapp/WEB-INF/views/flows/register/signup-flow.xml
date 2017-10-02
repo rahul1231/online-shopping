@@ -35,8 +35,8 @@
 	  </view-state>
 	  
 	  <action-state id="submit">
-	  	<evaluate expression="registerHandler.saveAll(flowScope.registerModel)" />
-	  	<transition on="success" to="success" />
+	  <evaluate expression="registerHandler.saveAll(flowScope.registerModel)" />
+	  	<transition on="success" to="success" />  	
 	  </action-state>
 	  
 	  <!-- end state -->

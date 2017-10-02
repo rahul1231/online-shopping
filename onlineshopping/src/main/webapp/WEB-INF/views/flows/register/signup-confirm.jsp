@@ -125,10 +125,11 @@
 								<h4>${registerModel.billing.city} - ${registerModel.billing.postalCode}</h4>
 								<h4>${registerModel.billing.state} - ${registerModel.billing.country}</h4>				
 							</div>
-							<a href="${flowExecutionUrl}&_eventId_billing" class="btn btn-primary">Edit</a>
+							
 						</div>
 						<div class="panel-footer">
 							<!-- anchor to move to the edit of address -->
+							<a href="${flowExecutionUrl}&_eventId_billing" class="btn btn-primary">Edit</a>
 						</div>
 					</div>
 				

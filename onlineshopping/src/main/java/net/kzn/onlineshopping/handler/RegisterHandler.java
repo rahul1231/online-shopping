@@ -1,5 +1,9 @@
 package net.kzn.onlineshopping.handler;
 
+
+
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -47,12 +51,12 @@ public class RegisterHandler {
 		
 		
 		// get the address
-		Address billing=model.getBilling();
-		billing.setId(user.getId());
-		billing.setBilling(true);
+		Address address=model.getBilling();
+		address.setUserId(user.getId());
+		address.setBilling(true);
 		
 		// save the address
-		userDAO.addAddress(billing);
+		userDAO.addAddress(address);
 		
 		
 		return transitionValue;

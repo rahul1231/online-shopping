@@ -90,11 +90,7 @@
 					
 						<div class="panel-body">
 						
-							<sf:form
-							 method="POST"
-							 class="form-horizontal"
-							 id="billingForm"
-							 modelAttribute="billing">
+							<sf:form method="POST" class="form-horizontal" id="billingForm" modelAttribute="billing">
 							
 							<div class="form-group">
 								<label class="control-label col-md-4" for="addressLineOne">Address Line One</label>

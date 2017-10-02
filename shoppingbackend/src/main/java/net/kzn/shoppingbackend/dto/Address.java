@@ -7,53 +7,58 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Address {
+public class Address implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	/*
 	 * private fields
 	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private int Id;
 	
-	/*---------*/
-	@ManyToOne
-	private User user;
 	
-	/*---------*/
-	
-	public User getUser() {
-		return user;
-	}
-	public void setUser(User user) {
-		this.user = user;
-	}
 
 
 	@Column(name="address_line_one")
 	private String addressLineOne;
 	@Column(name="address_line_two")
 	private String addressLineTwo;
+	private boolean billing;
 	private String city;
-	private String state;
 	private String country;
 	@Column(name="postal_code")
 	private String postalCode;
 	private boolean shipping;
-	private boolean billing;
+	private String state;
+	private int userId;
+	
+	
+	/*---------*/
+	@ManyToOne
+	@JoinColumn(name="userId",insertable=false,updatable=false)
+	private User user;
+	
+	/*---------*/
+
 	
 	
 	/*
 	 * setters and getters for the fields
 	 */
 	public int getId() {
-		return id;
+		return Id;
 	}
 	public void setId(int id) {
-		this.id = id;
+		Id = id;
 	}
 	public String getAddressLineOne() {
 		return addressLineOne;
@@ -67,17 +72,17 @@ public class Address {
 	public void setAddressLineTwo(String addressLineTwo) {
 		this.addressLineTwo = addressLineTwo;
 	}
+	public boolean isBilling() {
+		return billing;
+	}
+	public void setBilling(boolean billing) {
+		this.billing = billing;
+	}
 	public String getCity() {
 		return city;
 	}
 	public void setCity(String city) {
 		this.city = city;
-	}
-	public String getState() {
-		return state;
-	}
-	public void setState(String state) {
-		this.state = state;
 	}
 	public String getCountry() {
 		return country;
@@ -97,21 +102,25 @@ public class Address {
 	public void setShipping(boolean shipping) {
 		this.shipping = shipping;
 	}
-	public boolean isBilling() {
-		return billing;
+	public String getState() {
+		return state;
 	}
-	public void setBilling(boolean billing) {
-		this.billing = billing;
+	public void setState(String state) {
+		this.state = state;
 	}
-	
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+
 	// toString for looging and debugging activity
 	@Override
 	public String toString() {
-		return "Address [id=" + id + ", user=" + user + ", addressLineOne=" + addressLineOne + ", addressLineTwo="
-				+ addressLineTwo + ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode="
-				+ postalCode + ", shipping=" + shipping + ", billing=" + billing + "]";
+		return "Address [Id=" + Id + ", addressLineOne=" + addressLineOne + ", addressLineTwo=" + addressLineTwo
+				+ ", billing=" + billing + ", city=" + city + ", country=" + country + ", postalCode=" + postalCode
+				+ ", shipping=" + shipping + ", state=" + state + ", userId=" + userId + "]";
 	}
-	
-	
-	
+
 }

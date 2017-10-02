@@ -13,8 +13,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="user_detail")
-public class User {
+public class User implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/*
 	 * private fields for user
 	 * */
@@ -34,7 +38,7 @@ public class User {
 	
 	@OneToOne(mappedBy="user",cascade=CascadeType.ALL)
 	private Cart cart;
-	
+
 	public Cart getCart() {
 		return cart;
 	}
@@ -91,12 +95,14 @@ public class User {
 		this.enabled = enabled;
 	}
 	
+	
+	
 	// toString for looging and debugging activity
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", contactNumber=" + contactNumber + ", role=" + role + ", password=" + password + ", enabled="
-				+ enabled + "]";
+				+ enabled + ", cart=" + cart + "]";
 	}
 	
 	
