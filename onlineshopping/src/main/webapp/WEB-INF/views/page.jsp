@@ -18,6 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="_csrf" content="${_csrf.token}">
+    <meta name="_csrf_header" content="${_csrf.headerName}">
+    
 	
     <title>Online Shopping - ${title}</title>
     
@@ -50,14 +53,16 @@
      <!-- jQuery validator -->
 	<script src="${js}/jquery.validate.js"></script>
 	
-	 <!-- DataTable Plugin -->
+	<!-- Bootbox -->
+	<script src="${js}/bootbox.min.js"></script>
+	
+	<!-- DataTable Plugin -->
 	<script src="${js}/jquery.dataTables.js"></script>
 	
 	<!-- DataTable Bootstrap Script -->
 	<script src="${js}/dataTables.bootstrap.js"></script>
 	
-	<!-- Bootbox -->
-	<script src="${js}/bootbox.min.js"></script>
+	
 	
 	 <!-- Self Coded js -->
     <script src="${js}/myapp.js"></script>
