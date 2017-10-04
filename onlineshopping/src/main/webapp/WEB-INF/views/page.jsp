@@ -1,3 +1,6 @@
+
+<%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %> 
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -18,9 +21,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="_csrf" content="${_csrf.token}">
-    <meta name="_csrf_header" content="${_csrf.headerName}">
-    
+	<meta name="_csrf" content="${_csrf.token}"/>
+	<meta name="_csrf_header" content="${_csrf.headerName}"/>
 	
     <title>Online Shopping - ${title}</title>
     
@@ -53,23 +55,19 @@
      <!-- jQuery validator -->
 	<script src="${js}/jquery.validate.js"></script>
 	
-	<!-- Bootbox -->
-	<script src="${js}/bootbox.min.js"></script>
-	
-	<!-- DataTable Plugin -->
+	 <!-- DataTable Plugin -->
 	<script src="${js}/jquery.dataTables.js"></script>
 	
 	<!-- DataTable Bootstrap Script -->
 	<script src="${js}/dataTables.bootstrap.js"></script>
 	
-	
+	<!-- Bootbox -->
+	<script src="${js}/bootbox.min.js"></script>
 	
 	 <!-- Self Coded js -->
     <script src="${js}/myapp.js"></script>
 
   </head>
-
-  <body>
   
   	<div class="wrapper">
 
@@ -116,7 +114,4 @@
     <%@include file="./shared/footer.jsp" %>
     
 	</div>
-
-  </body>
-
 </html>

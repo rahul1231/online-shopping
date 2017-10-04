@@ -23,8 +23,7 @@
 		<!-- rest of the world -->
 		<intercept-url pattern="/**" access="permitAll" />
 		<form-login login-page="/login"/>
-		<access-denied-handler error-page="/access-denied/" />
-		<logout />
+		<access-denied-handler error-page="/access-denied" />
 	</http>
 
 	<authentication-manager>

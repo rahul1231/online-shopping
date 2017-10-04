@@ -1,8 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 
 <spring:url var="css" value="/resources/css"/>
 <spring:url var="js" value="/resources/js"/>
@@ -29,32 +26,32 @@
     	
     </script>
 	
-<!-- jQuery -->
-<script src="${js}/jquery.js"></script>
+	<!-- jQuery -->
+    <script src="${js}/jquery.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+	<script src="${js}/vendor.min.js"></script>
+    <script src="${js}/bootstrap.min.js"></script>
+	
+	 <!-- Bootstrap core CSS -->
+    <link href="${css}/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Readable Theme CSS -->
+    <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
-
-
-<!-- jQuery validator -->
-<script src="${js}/jquery.validate.js"></script>
-
-<!-- Bootbox -->
-<script src="${js}/bootbox.min.js"></script>
-
-
-
-<!-- Bootstrap core CSS -->
-<link href="${css}/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap core JavaScript -->
-<script src="${js}/vendor.min.js"></script>
-<script src="${js}/bootstrap.min.js"></script>
-
-<!-- Self Coded js -->
-<script src="${js}/myapp.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="${css}/myapp.css" rel="stylesheet">
+    
+    <!-- jQuery validator -->
+	<script src="${js}/jquery.validate.js"></script>
+	
+	<!-- Bootbox -->
+	<script src="${js}/bootbox.min.js"></script>
+	
+	 <!-- Self Coded js -->
+    <script src="${js}/myapp.js"></script>
 
   </head>
-
-  <body>
   
   	<div class="wrapper">
 
@@ -82,6 +79,24 @@
     			
     					<div class="'alert alert-danger">
     						${message}
+    					</div>
+    			
+    				</div>
+    			
+    			
+    			</div>
+    		
+    		</c:if>
+    	
+    		<%-- This will be displayed only when user has logged out --%>
+    		<c:if test="${not empty logout}">
+    		
+    			<div class="row">
+    		
+    				<div class="col-md-offset-3 col-md-6">
+    			
+    					<div class="'alert alert-success">
+    						${logout}
     					</div>
     			
     				</div>
@@ -136,7 +151,5 @@
     <%@include file="./shared/footer.jsp" %>
     
 	</div>
-
-  </body>
 
 </html>
