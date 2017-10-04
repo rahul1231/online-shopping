@@ -29,30 +29,28 @@
     	
     </script>
 	
-	<!-- jQuery -->
-    <script src="${js}/jquery.js"></script>
-    
-    <!-- Bootstrap core JavaScript -->
-	<script src="${js}/vendor.min.js"></script>
-    <script src="${js}/bootstrap.min.js"></script>
-	
-	 <!-- Bootstrap core CSS -->
-    <link href="${css}/bootstrap.min.css" rel="stylesheet">
-    
-     <!-- jQuery validator -->
-	<script src="${js}/jquery.validate.js"></script>
-	
-	 <!-- DataTable Plugin -->
-	<script src="${js}/jquery.dataTables.js"></script>
-	
-	<!-- DataTable Bootstrap Script -->
-	<script src="${js}/dataTables.bootstrap.js"></script>
-	
-	<!-- Bootbox -->
-	<script src="${js}/bootbox.min.js"></script>
-	
-	 <!-- Self Coded js -->
-    <script src="${js}/myapp.js"></script>
+<!-- jQuery -->
+<script src="${js}/jquery.js"></script>
+
+
+
+<!-- jQuery validator -->
+<script src="${js}/jquery.validate.js"></script>
+
+<!-- Bootbox -->
+<script src="${js}/bootbox.min.js"></script>
+
+
+
+<!-- Bootstrap core CSS -->
+<link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap core JavaScript -->
+<script src="${js}/vendor.min.js"></script>
+<script src="${js}/bootstrap.min.js"></script>
+
+<!-- Self Coded js -->
+<script src="${js}/myapp.js"></script>
 
   </head>
 
