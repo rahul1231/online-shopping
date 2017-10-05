@@ -136,11 +136,11 @@
 		</div>
 	
 		<div class="col-lg-offset-3 col-lg-9 col-xs-12">
+			<div class="container-fluid">
 			
-			<div style="overflow:auto">
-				
+				<div class="table-responsive">
 				<!-- Products table for Admin -->
-				<table id="adminProductsTable" class="table table-striped table-bordered">
+					<table id="adminProductsTable" class="table table-striped table-bordered">
 					
 					<thead>
 						<tr>
@@ -169,8 +169,10 @@
 						</tfoot>
 				</table>
 				
-			</div>
-		
+				</div>
+			
+			</div>	
+
 		</div>
 		
 	</div>

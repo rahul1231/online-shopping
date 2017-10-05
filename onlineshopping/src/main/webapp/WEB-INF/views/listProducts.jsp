@@ -52,41 +52,50 @@
 			
 				<div class="col-lg-9 col-xs-12">
 				
-				
-					<table id="productListTable" class="table table-striped table-bordered">
+					<div class="container-fluid">
+					
+						<div class="table-responsive">
+						
+							<table id="productListTable" class="table table-striped table-bordered">
 					
 						
-						<thead>
+								<thead>
 						
-							<tr>
-							
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
-								<th></th>
+									<tr>
+									
+										<th></th>
+										<th>Name</th>
+										<th>Brand</th>
+										<th>Price</th>
+										<th>Qty. Available</th>
+										<th></th>
+										
+									</tr>
 								
-							</tr>
-						
-						</thead>
+								</thead>
 						
 						
-						<tfoot>
-						
-							<tr>
-							
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
-								<th></th>
+								<tfoot>
 								
-							</tr>
+									<tr>
+									
+										<th></th>
+										<th>Name</th>
+										<th>Brand</th>
+										<th>Price</th>
+										<th>Qty. Available</th>
+										<th></th>
+										
+									</tr>
+								
+								</tfoot>
+							</table>
 						
-						</tfoot>
-					</table>
+						</div>
+					
+					</div>
+				
+					
 				
 				
 				</div>
