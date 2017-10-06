@@ -3,19 +3,21 @@
 	<div class="row">
 
 		<!-- Would be to display sidebar -->
-		<div class="col-md-3">
+		<div class="col-lg-3">
 			<%@include file="./shared/sidebar.jsp"%>
 
 
 		</div>
 
 		<!-- to display the actual products -->
-		<div class="col-md-9">
+		<div class="col-lg-9">
 
 			<!-- Added breadcrumb component -->
 			<div class="row">
 
-				<div class="col-lg-12 col-xs-12">
+				<div class="col-lg-9">
+
+				
 
 					<c:if test="${userClickAllProducts==true}">
 					
@@ -43,17 +45,15 @@
 						</ol>
 					</c:if>
 				</div>
-
+				
 
 			</div>
 
 			
 			<div class="row">
 			
-				<div class="col-lg-9 col-xs-12">
-				
-					<div class="container-fluid">
-					
+				<div class="col-lg-9">
+
 						<div class="table-responsive">
 						
 							<table id="productListTable" class="table table-striped table-bordered">
@@ -92,12 +92,7 @@
 							</table>
 						
 						</div>
-					
-					</div>
-				
-					
-				
-				
+
 				</div>
 			
 			</div>
@@ -112,4 +107,3 @@
 
 
 </div>
-
